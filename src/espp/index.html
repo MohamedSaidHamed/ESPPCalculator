@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESPP Calculator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  <script  type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+  <h1>ESPP Calculator</h1>
+  <form  id="form_id">
+    <label for="input1"><span class="input-number-circle">1</span>Your ESPP Contribution $:</label>
+    <input type="number" id="input1" name="contribution">
+
+
+    <label for="input2"><span class="input-number-circle">2</span>Opening Stock Price $:</label>
+    <input type="number" id="input2" name="startPrice">
+
+
+    <label for="input3"><span class="input-number-circle">3</span>Closing Stock Price $:</label>
+    <input type="number" id="input3" name="endPrice">
+
+
+    <label for="date"><span class="input-number-circle">4</span>Sell Date:</label>
+    <input type="date" id="date" name="endDate">
+
+
+    <br/>
+    <button id="sub" type="button">Calculate ESPP <span class="right-arrow">&rarr;</span></button>
+	
+	<br/>
+	<br/>
+	<label id="currency"></label>
+	<br/>
+	<label id="taxableAmount"></label>
+	<br/>
+	<label id="taxes"></label>
+  </form>
+  <footer class="footer">
+    <div class="made-with">
+      Made with<span class="heart">&hearts;</span>by <span> <a href="https://mohamedsaidhamed.org/#/profile"> Mohamed Hamed </a></span>
+    </div>
+	<div>
+	<span class="disclaimer"> Disclaimer: This tool provides ESPP tax estimation, You should always refer to your tax adviser for accurate results </span>
+	</div>
+    <div class="social-icons">
+      <a href="https://www.twitter.com" class="social-icon"><i class="fab fa-twitter-square"></i></a>
+      <a href="https://www.github.com" class="social-icon"><i class="fab fa-github-square"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
